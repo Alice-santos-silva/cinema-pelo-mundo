@@ -1,0 +1,280 @@
+/*Resolução de tela: 1920 x 1080*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    background-color: black;  
+}
+
+.logo-cinema{
+    height: 70px;
+    padding-right: 5px;   
+}
+
+header h1>a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.links-direita{
+     position: absolute;
+     width: 115px;
+     top: 40px;
+     right: 40px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*página home*/
+
+main#home{
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.secao1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5DC;
+    width: 50vw;
+}
+
+.secao1>h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.secao1 p{
+    padding: 20px;
+    font-size: 14px;
+}
+
+#botao{
+    background-color: darkblue;
+    border-radius: 10px;
+    border: 4px solid orange;
+    margin-bottom: 10px;
+}
+
+#botao:hover{
+    background-color: rgba(0, 0, 139, 0.7);
+}
+
+#botao a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secao2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 150px;
+    background-color: #D3D3D3;
+    width: 50vw;
+}
+
+.secao2>h2{
+    margin-top: 30px;
+    color: #000089;
+}
+
+.secao2 h3{
+    padding-top: 20px;
+    text-align: center;
+    color: #000089;
+}
+
+/*Página Local*/
+
+main#local{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5DC;
+}
+
+.h2local{
+    padding: 20px;
+}
+
+.h3local{
+    padding: 40px;
+    font-style: italic;
+}
+
+#iframe{
+    margin-top: 20px;
+}
+
+#rj{
+    color: rgb(254, 0, 0);
+    text-decoration: underline;
+    padding-bottom: 20px;
+    margin-left: 100px;
+}
+
+#local ol{
+    font-weight: bolder;
+}
+
+.lista-local{
+    list-style-type: none;
+}
+
+.lista-direita{
+    margin-left: 50px;
+}
+
+/*Página Filmes*/
+#main-filme{
+    height: 100%;
+    padding: 10px;
+    background-color: #F5F5DC;
+}
+
+#main-filme #titulo-filme{
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+.titulo-card{
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+  }
+
+span{
+    color: red;
+}
+
+#main-filme section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+    width: 300px;
+    height: 600px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+
+.icone-fechar{
+    margin-left: 270px;
+    margin-top: 5px;
+    position: absolute;
+    width: 20px;
+    cursor: pointer;
+}
+
+.img-card{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.sinopse{
+    color: #508F4D;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+}
+
+table{
+    width: 300px;
+    background-color:  purple;
+}
+
+thead, th{
+    background-color: #F5F5DC;
+    padding: 5px;
+    font-size: 20px;
+}
+
+tbody, td{
+    background-color: #F5F5DC;
+    font-weight: bold;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+}
+
+#tabela-vermelho{
+    color: red;
+}
+
+.tabela-verde{
+    color: #006923;
+}
+
+.marrom{
+  color: brown;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.whats{
+    position: fixed;
+    width: 60px;
+    bottom: 65px; 
+    right: 40px;
+    z-index: 1;
+}
